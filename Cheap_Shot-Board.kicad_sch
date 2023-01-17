@@ -231,6 +231,15 @@
   )
 
 
+  (text "Connectors\n" (at 35.56 140.97 0)
+    (effects (font (size 4 4) (thickness 0.8) bold) (justify left bottom))
+    (uuid c07c6f66-ab22-4bbd-8e01-7beeb94d4582)
+  )
+  (text "POWER\n" (at 100.33 140.97 0)
+    (effects (font (size 4 4) (thickness 0.8) bold) (justify left bottom))
+    (uuid d0ed6032-2191-47bc-ae60-506f368e09f6)
+  )
+
   (symbol (lib_id "MCU_ST_STM32F1:STM32F103C8Tx") (at 106.68 85.09 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid f48efeb8-d579-41e3-a858-bf227dc98d48)
@@ -296,11 +305,58 @@
     (pin "9" (uuid 1c0b4e00-cf2b-4d21-905f-15d8c6a96ae9))
   )
 
+  (sheet (at 44.45 143.51) (size 24.13 24.13) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid) (color 0 0 0 0))
+    (fill (color 0 0 0 0.0000))
+    (uuid 64d18fa2-7941-4866-8c1f-29c077bec16a)
+    (property "Sheet name" "Connectors" (id 0) (at 44.45 142.7984 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheet file" "Connectors.kicad_sch" (id 1) (at 44.45 168.2246 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+  )
+
+  (sheet (at 96.52 143.51) (size 24.13 24.13) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid) (color 0 0 0 0))
+    (fill (color 0 0 0 0.0000))
+    (uuid 9d8a098e-55ac-4559-bb36-a5cce70eb1a0)
+    (property "Sheet name" "POWER" (id 0) (at 96.52 142.7984 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheet file" "POWER.kicad_sch" (id 1) (at 96.52 168.2246 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+  )
+
   (sheet_instances
     (path "/" (page "1"))
+    (path "/64d18fa2-7941-4866-8c1f-29c077bec16a" (page "2"))
+    (path "/9d8a098e-55ac-4559-bb36-a5cce70eb1a0" (page "3"))
   )
 
   (symbol_instances
+    (path "/64d18fa2-7941-4866-8c1f-29c077bec16a/15d62cba-1c9c-4130-85ae-45ab88c2db85"
+      (reference "#PWR?") (unit 1) (value "+5V") (footprint "")
+    )
+    (path "/64d18fa2-7941-4866-8c1f-29c077bec16a/376d7158-2d3f-4d84-a569-067e8bf210df"
+      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/64d18fa2-7941-4866-8c1f-29c077bec16a/8ee61d0c-7151-47cb-9687-704e45d7bafc"
+      (reference "#PWR?") (unit 1) (value "+5V") (footprint "")
+    )
+    (path "/64d18fa2-7941-4866-8c1f-29c077bec16a/93696d09-6602-40f5-b39b-1087e979ff10"
+      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/64d18fa2-7941-4866-8c1f-29c077bec16a/fde43a77-b087-40c9-863f-9197b7567505"
+      (reference "J?") (unit 1) (value "USB_B_Micro") (footprint "")
+    )
+    (path "/9d8a098e-55ac-4559-bb36-a5cce70eb1a0/01ad2c3b-c485-4edd-a4ae-d49717e613df"
+      (reference "U?") (unit 1) (value "XC6206PxxxMR") (footprint "Package_TO_SOT_SMD:SOT-23")
+    )
+    (path "/64d18fa2-7941-4866-8c1f-29c077bec16a/33ea7f72-8d3e-4e3a-919a-48e6a425a45c"
+      (reference "U?") (unit 1) (value "USBLC6-2SC6") (footprint "Package_TO_SOT_SMD:SOT-23-6")
+    )
     (path "/f48efeb8-d579-41e3-a858-bf227dc98d48"
       (reference "U?") (unit 1) (value "STM32F103C8Tx") (footprint "Package_QFP:LQFP-48_7x7mm_P0.5mm")
     )
