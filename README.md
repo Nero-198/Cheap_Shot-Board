@@ -1,8 +1,12 @@
-# Cheap_Shot-Board
+# Cheap_Shot-Board 
+## This project is WIP
 STM32F103C8T6 HID Develop board
 
 # 概要
 STM32 Custom HID 用開発ボード
+
+4層基板
+JLCPCB PCB Assembly用設定ファイルも同梱
 
 USBコネクタ
 AXIS 用ADCコネクタ 8つ
