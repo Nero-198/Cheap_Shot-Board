@@ -240,10 +240,25 @@
     (uuid d0ed6032-2191-47bc-ae60-506f368e09f6)
   )
 
+  (global_label "USB-" (shape input) (at 76.2 96.52 180) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid 710e4b83-9e15-4079-99dd-e9dfaa30674c)
+    (property "Intersheet References" "${INTERSHEET_REFS}" (id 0) (at 68.4045 96.5994 0)
+      (effects (font (size 1.27 1.27)) (justify right) hide)
+    )
+  )
+  (global_label "USB+" (shape input) (at 76.2 87.63 180) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid 7e737f15-ea47-4348-b7bb-107443c4e591)
+    (property "Intersheet References" "${INTERSHEET_REFS}" (id 0) (at 68.4045 87.5506 0)
+      (effects (font (size 1.27 1.27)) (justify right) hide)
+    )
+  )
+
   (symbol (lib_id "MCU_ST_STM32F1:STM32F103C8Tx") (at 106.68 85.09 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid f48efeb8-d579-41e3-a858-bf227dc98d48)
-    (property "Reference" "U?" (id 0) (at 111.2394 122.6804 0)
+    (property "Reference" "U1" (id 0) (at 111.2394 122.6804 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "STM32F103C8Tx" (id 1) (at 111.2394 125.2173 0)
@@ -336,29 +351,50 @@
   )
 
   (symbol_instances
-    (path "/64d18fa2-7941-4866-8c1f-29c077bec16a/15d62cba-1c9c-4130-85ae-45ab88c2db85"
-      (reference "#PWR?") (unit 1) (value "+5V") (footprint "")
-    )
-    (path "/64d18fa2-7941-4866-8c1f-29c077bec16a/376d7158-2d3f-4d84-a569-067e8bf210df"
-      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
+    (path "/64d18fa2-7941-4866-8c1f-29c077bec16a/93696d09-6602-40f5-b39b-1087e979ff10"
+      (reference "#PWR01") (unit 1) (value "GND") (footprint "")
     )
     (path "/64d18fa2-7941-4866-8c1f-29c077bec16a/8ee61d0c-7151-47cb-9687-704e45d7bafc"
-      (reference "#PWR?") (unit 1) (value "+5V") (footprint "")
+      (reference "#PWR02") (unit 1) (value "+5V") (footprint "")
     )
-    (path "/64d18fa2-7941-4866-8c1f-29c077bec16a/93696d09-6602-40f5-b39b-1087e979ff10"
-      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
+    (path "/64d18fa2-7941-4866-8c1f-29c077bec16a/15d62cba-1c9c-4130-85ae-45ab88c2db85"
+      (reference "#PWR03") (unit 1) (value "+5V") (footprint "")
+    )
+    (path "/64d18fa2-7941-4866-8c1f-29c077bec16a/376d7158-2d3f-4d84-a569-067e8bf210df"
+      (reference "#PWR04") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/9d8a098e-55ac-4559-bb36-a5cce70eb1a0/a36e1875-ac58-4a47-b8be-9d21a2680e09"
+      (reference "#PWR05") (unit 1) (value "+5V") (footprint "")
+    )
+    (path "/9d8a098e-55ac-4559-bb36-a5cce70eb1a0/ab45534b-b5d9-431d-9156-6c97c198594d"
+      (reference "#PWR06") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/9d8a098e-55ac-4559-bb36-a5cce70eb1a0/951b2b75-08a6-49a4-9765-155650382c3d"
+      (reference "#PWR07") (unit 1) (value "+3.3V") (footprint "")
+    )
+    (path "/9d8a098e-55ac-4559-bb36-a5cce70eb1a0/b8c79952-0449-4a8c-aa4c-5ee7ff5cdd61"
+      (reference "C1") (unit 1) (value "10u") (footprint "")
+    )
+    (path "/9d8a098e-55ac-4559-bb36-a5cce70eb1a0/2bbee2c7-9586-45b9-8348-7c6c6020fc66"
+      (reference "C2") (unit 1) (value "10u") (footprint "")
+    )
+    (path "/9d8a098e-55ac-4559-bb36-a5cce70eb1a0/432a9c48-4be7-4947-a94c-11f212295292"
+      (reference "F1") (unit 1) (value "Fuse") (footprint "")
+    )
+    (path "/9d8a098e-55ac-4559-bb36-a5cce70eb1a0/b4abe4ef-a90e-4a5d-a62d-a56b5c1707fd"
+      (reference "FB1") (unit 1) (value "100@100MHz") (footprint "")
     )
     (path "/64d18fa2-7941-4866-8c1f-29c077bec16a/fde43a77-b087-40c9-863f-9197b7567505"
-      (reference "J?") (unit 1) (value "USB_B_Micro") (footprint "")
-    )
-    (path "/9d8a098e-55ac-4559-bb36-a5cce70eb1a0/01ad2c3b-c485-4edd-a4ae-d49717e613df"
-      (reference "U?") (unit 1) (value "XC6206PxxxMR") (footprint "Package_TO_SOT_SMD:SOT-23")
-    )
-    (path "/64d18fa2-7941-4866-8c1f-29c077bec16a/33ea7f72-8d3e-4e3a-919a-48e6a425a45c"
-      (reference "U?") (unit 1) (value "USBLC6-2SC6") (footprint "Package_TO_SOT_SMD:SOT-23-6")
+      (reference "J1") (unit 1) (value "USB_B_Micro") (footprint "")
     )
     (path "/f48efeb8-d579-41e3-a858-bf227dc98d48"
-      (reference "U?") (unit 1) (value "STM32F103C8Tx") (footprint "Package_QFP:LQFP-48_7x7mm_P0.5mm")
+      (reference "U1") (unit 1) (value "STM32F103C8Tx") (footprint "Package_QFP:LQFP-48_7x7mm_P0.5mm")
+    )
+    (path "/64d18fa2-7941-4866-8c1f-29c077bec16a/33ea7f72-8d3e-4e3a-919a-48e6a425a45c"
+      (reference "U2") (unit 1) (value "USBLC6-2SC6") (footprint "Package_TO_SOT_SMD:SOT-23-6")
+    )
+    (path "/9d8a098e-55ac-4559-bb36-a5cce70eb1a0/01ad2c3b-c485-4edd-a4ae-d49717e613df"
+      (reference "U3") (unit 1) (value "XC6206PxxxMR") (footprint "Package_TO_SOT_SMD:SOT-23")
     )
   )
 )
